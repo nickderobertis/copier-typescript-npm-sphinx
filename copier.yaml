@@ -11,9 +11,19 @@ _envops:
   variable_end_string: "}}"
   variable_start_string: "{{"
 
+package_name:
+  type: str
+  help: Name of the package on NPM
+
+repo_name:
+  type: str
+  help: Name of the repository on GitHub
+  default: "{{ package_name }}"
+
 full_name:
   type: str
   help: Full name of the project with formatting
+  default: "{{ package_name | replace('-', ' ') | title }}"
 
 short_description:
   type: str
@@ -28,3 +38,8 @@ author:
   type: str
   help: Name of the primary author of the project
   default: Nick DeRobertis
+
+repo_username:
+  type: str
+  help: Username of the GitHub repository
+  default: nickderobertis
