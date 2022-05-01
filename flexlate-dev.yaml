@@ -8,6 +8,7 @@ data:
       package_name: typescript-npm-sphinx-example
       short_description: Example template output for copier-typescript-npm-sphinx
     folder_name: typescript-npm-sphinx-example
+    auto_commit_message: "chore: Auto-commit manual changes"
 run_configs:
   default:
     data_name: default
