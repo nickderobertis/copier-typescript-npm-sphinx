@@ -14,7 +14,15 @@
   "applied_templates": [
     {
       "name": "copier-flexlate-dev-semantic-release",
-      "data": {},
+      "data": {
+        "repo_name": "copier-typescript-npm-sphinx",
+        "full_name": "Copier TypeScript NPM Sphinx",
+        "repo_username": "nickderobertis",
+        "short_description": "Copier Template for an NPM Package built with TypeScript",
+        "author": "Nick DeRobertis",
+        "author_email": "derobertis.nick@gmail.com",
+        "main_branch_name": "main"
+      },
       "version": "f58c0d254aa0d334be32cd72b20ed97976906cb8",
       "add_mode": "local",
       "root": "."
