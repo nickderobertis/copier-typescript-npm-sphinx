@@ -1,3 +1,54 @@
 # {{ full_name }}
 
-{{ short_description }}
+[![npm package][npm-img]][npm-url]
+[![Build Status][build-img]][build-url]
+[![Downloads][downloads-img]][downloads-url]
+[![Issues][issues-img]][issues-url]
+[![Code Coverage][codecov-img]][codecov-url]
+[![Commitizen Friendly][commitizen-img]][commitizen-url]
+[![Semantic Release][semantic-release-img]][semantic-release-url]
+
+{{ short_description}}
+
+## Install
+
+```bash
+npm install {{ package_name }}
+```
+
+## Usage
+
+```ts
+import '{{ package_name }}';
+```
+
+## Development Status
+
+This project uses [semantic-release](https://github.com/semantic-release/semantic-release) for versioning.
+Any time the major version changes, there may be breaking changes. If it is working well for you, consider
+pegging to the current major version, e.g. `{{ package_name }}@v1`, to avoid breaking changes. Alternatively,
+you can always point to the most recent stable release with the `{{ package_name }}@latest`.
+
+## Developing
+
+Clone the repo and then run `npm install` to set up the pre-commit hooks.
+
+## Author
+
+Created by Nick DeRobertis. MIT License.
+
+
+[build-img]:https://github.com/{{ repo_username }}/{{ repo_name }}/actions/workflows/release.yml/badge.svg
+[build-url]:https://github.com/{{ repo_username }}/{{ repo_name }}/actions/workflows/release.yml
+[downloads-img]:https://img.shields.io/npm/dt/{{ package_name }}
+[downloads-url]:https://www.npmtrends.com/{{ package_name }}
+[npm-img]:https://img.shields.io/npm/v/{{ package_name }}
+[npm-url]:https://www.npmjs.com/package/{{ package_name }}
+[issues-img]:https://img.shields.io/github/issues/{{ repo_username }}/{{ repo_name }}
+[issues-url]:https://github.com/{{ repo_username }}/{{ repo_name }}/issues
+[codecov-img]:https://codecov.io/gh/{{ repo_username }}/{{ repo_name }}/branch/main/graph/badge.svg
+[codecov-url]:https://codecov.io/gh/{{ repo_username }}/{{ repo_name }}
+[semantic-release-img]:https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release-url]:https://github.com/semantic-release/semantic-release
+[commitizen-img]:https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[commitizen-url]:http://commitizen.github.io/cz-cli/

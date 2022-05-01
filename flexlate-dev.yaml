@@ -5,11 +5,15 @@ data:
       author: Nick DeRobertis
       full_name: typescript-npm-sphinx-example
       main_branch_name: main
+      package_name: typescript-npm-sphinx-example
       short_description: Example template output for copier-typescript-npm-sphinx
     folder_name: typescript-npm-sphinx-example
 run_configs:
   default:
     data_name: default
+    serve:
+      post_init:
+        - npm install
     publish:
       post_init:
         - gh repo create --public --source=.
