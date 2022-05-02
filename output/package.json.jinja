@@ -2,10 +2,17 @@
   "name": "{{ package_name }}",
   "version": "0.0.0-development",
   "description": "{{ short_description }}",
-  "main": "./dist/src/index.js",
+  "main": "./dist/{{ package_name }}.umd.js",
+  "module": "./dist/{{ package_name }}.es.js",
   "files": [
     "dist/**/*"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/{{ package_name }}.es.js",
+      "require": "./dist/{{ package_name }}.umd.js"
+    }
+  },
   "scripts": {
     "build": "tsc && vite build",
     "coverage": "codecov",
