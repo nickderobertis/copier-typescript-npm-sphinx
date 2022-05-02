@@ -15,6 +15,9 @@ run_configs:
     serve:
       post_init:
         - npm install
+        - name: Run dev server
+          run: npm run dev
+          background: true
     publish:
       post_init:
         - gh repo create --public --source=.
