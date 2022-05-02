@@ -25,6 +25,9 @@ run_configs:
         - git push --all origin
       post_update:
         - fxt merge
+        - echo $(date) > .github/IGNORE_THIS_FILE.txt
+        - git add -A
+        - "git commit -m 'feat: Add a dummy change to trigger release'"
         - git push --all origin
       pre_check:
         - if [ -n "$(find . -prune -empty 2>/dev/null)" ]; then gh repo clone {{ data.folder_name

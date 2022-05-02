@@ -2,6 +2,8 @@
 
 Copier Template for an NPM Package built with TypeScript
 
+See [an example output project here](https://github.com/nickderobertis/typescript-npm-sphinx-example).
+
 ## Development Status
 
 This project uses [semantic-release](https://github.com/semantic-release/semantic-release) for versioning.
