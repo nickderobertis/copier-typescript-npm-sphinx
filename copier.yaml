@@ -43,3 +43,8 @@ repo_username:
   type: str
   help: Username of the GitHub repository
   default: nickderobertis
+
+package_filename:
+  type: str
+  help: Main name of the output package files
+  default: "{{ package_name | replace('/', '-') }}"

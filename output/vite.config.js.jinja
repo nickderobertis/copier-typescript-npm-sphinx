@@ -7,7 +7,7 @@ module.exports = defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: '{{ package_name }}',
-      fileName: (format) => `{{ package_name }}.${format}.js`
+      fileName: (format) => `{{ package_filename }}.${format}.js`
     },
     outDir: path.resolve(__dirname, './dist'),
     rollupOptions: {

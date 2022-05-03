@@ -2,15 +2,15 @@
   "name": "{{ package_name }}",
   "version": "0.0.0-development",
   "description": "{{ short_description }}",
-  "main": "./dist/{{ package_name }}.umd.js",
-  "module": "./dist/{{ package_name }}.es.js",
+  "main": "./dist/{{ package_filename }}.umd.js",
+  "module": "./dist/{{ package_filename }}.es.js",
   "files": [
     "dist/**/*"
   ],
   "exports": {
     ".": {
-      "import": "./dist/{{ package_name }}.es.js",
-      "require": "./dist/{{ package_name }}.umd.js"
+      "import": "./dist/{{ package_filename }}.es.js",
+      "require": "./dist/{{ package_filename }}.umd.js"
     }
   },
   "scripts": {

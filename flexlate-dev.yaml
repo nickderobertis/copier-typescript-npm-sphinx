@@ -8,11 +8,22 @@ data:
       package_name: typescript-npm-sphinx-example
       short_description: Example template output for copier-typescript-npm-sphinx
     folder_name: typescript-npm-sphinx-example
-    auto_commit_message: "chore: Auto-commit manual changes"
+  organization:
+    data:
+      author: Nick DeRobertis
+      full_name: typescript-npm-sphinx-example
+      main_branch_name: main
+      package_name: "@typescript-npm-sphinx/example"
+      short_description: Example template output for copier-typescript-npm-sphinx with organization
+    folder_name: typescript-npm-sphinx-organization-example
 run_configs:
+  organization:
+    extends: default
+    data_name: organization
   default:
     data_name: default
     serve:
+      auto_commit_message: "chore: Auto-commit manual changes"
       post_init:
         - npm install
         - name: Run dev server
