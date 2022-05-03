@@ -18,7 +18,7 @@ package_name:
 repo_name:
   type: str
   help: Name of the repository on GitHub
-  default: "{{ package_name }}"
+  default: "{{ package_name | replace('/', '-') | replace('@', '') }}"
 
 full_name:
   type: str
