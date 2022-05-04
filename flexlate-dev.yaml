@@ -19,6 +19,8 @@ run_configs:
   organization:
     extends: default
     data_name: organization
+  plain:
+    extends: default
   default:
     data_name: default
     serve:
