@@ -48,3 +48,8 @@ package_filename:
   type: str
   help: Main name of the output package files
   default: "{{ package_name | replace('/', '-') }}"
+
+topics:
+  type: yaml
+  help: Topics for the project
+  default: "[]"

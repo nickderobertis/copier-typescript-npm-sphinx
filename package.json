@@ -6,7 +6,18 @@
   "scripts": {
     "prepare": "husky install"
   },
-  "author": "",
+  "author": "Nick DeRobertis",
+  "keywords": [
+    "boilerplate",
+    "template",
+    "typescript",
+    "vscode",
+    "jest",
+    "husky",
+    "commitizen",
+    "semantic-release",
+    "codecov"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",

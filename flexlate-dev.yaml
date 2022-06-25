@@ -7,6 +7,11 @@ data:
       main_branch_name: main
       package_name: typescript-npm-sphinx-example
       short_description: Example template output for copier-typescript-npm-sphinx
+      topics:
+        - "TypeScript"
+        - "npm"
+        - "Sphinx"
+        - "Multi-word Example"
     folder_name: typescript-npm-sphinx-example
   organization:
     extends: default
